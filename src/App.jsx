@@ -80,7 +80,7 @@ const MY_INFO = {
       tags: ["React", "OpenAI", "GPT-4o"],
     },
     {
-      name: "Butiksidor för till exempel frisörer , fölorister och restauranger",
+      name: "Butiksidor för till exempel frisörer , florister och restauranger",
       desc: "Diverse butikssidor för olika typer av affärsverksamheter.",
       tags: ["HTML", "CSS", "JavaScript"],
     },
@@ -90,20 +90,20 @@ const MY_INFO = {
       tags: ["React Native", "OpenAI", "JavaScript", "html", "css"],
     },
     {
-      name : "AI-skadeanmälan agent",
-      desc: "En AI-assistent som hjälper till med till exempel skadeanmälningar och processer och inläsning av kvitton.",
+      name : "AI-agent",
+      desc: "En AI-assistent som hjälper till med till exempel inläsning av kvitton.",
       tags: ["AI", "Skadehantering"],
     },
     {
       name: "Egen AI-kompetensutveckling",
-      desc: "Fortsatt inlarning och utveckling av AI-kompetenser, inklusive prompt engineering och modellanvändning.",
+      desc: "Fortsatt inlärning och utveckling av AI-kompetenser, inklusive prompt engineering och modellanvändning.",
       tags: ["Google AI courses for Gemini"],
     }
   ],
   learning: [
     {
       name: "Google AI course for Gemini",
-      desc: "Fortsatt inlarning och utveckling av AI-kompetenser, inklusive prompt engineering och modellanvändning.",
+      desc: "Fortsatt inlärning och utveckling av AI-kompetenser, inklusive prompt engineering och modellanvändning.",
       tags: ["Google AI"],
     }
   ]
