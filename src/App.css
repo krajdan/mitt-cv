@@ -46,3 +46,18 @@ body { background: #0b0b0b; font-family: 'DM Sans', sans-serif; color: #f0ede8; 
 .inp:focus { outline:none; border-color:#c9a84c88 !important; }
 .send-btn:hover { background:#f0ede8 !important; }
 .send-btn:disabled { opacity:.5; cursor:not-allowed; }
+
+/* ── MOBILVY ─────────────────────────────────────────── */
+@media (max-width: 600px) {
+  nav { padding: 14px 20px !important; }
+  nav div { gap: 12px !important; }
+  nav span { display: none; }
+
+  section { padding: 60px 20px !important; }
+
+  .exp-row { grid-template-columns: 1fr !important; gap: 6px !important; }
+
+  h1 { font-size: clamp(52px, 18vw, 120px) !important; }
+
+  .chat-panel { width: 100vw !important; }
+}
