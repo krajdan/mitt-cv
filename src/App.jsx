@@ -115,12 +115,12 @@ function buildSystemPrompt(info) {
   var proj = info.projects.map(function(p) { return "- " + p.name + ": " + p.desc + " [" + p.tags.join(", ") + "]"; }).join("\n");
   var hobbies = info.hobbies.join(", ");
 
-  return "Du ar en AI-assistent for " + info.name + ", " + info.title + " baserad i " + info.location + ".\n"
-    + "Svara pa fragor om " + info.name + "s bakgrund, erfarenhet, projekt och personlighet. Var kortfattad, varm och professionell.\n"
-    + "Svara alltid pa samma sprak som fragan stalls pa.\n\n"
+  return "Du är en AI-assistent för " + info.name + ", " + info.title + " baserad i " + info.location + ".\n"
+    + "Svara på frågor om " + info.name + "s bakgrund, erfarenhet, projekt och personlighet. Var kortfattad, varm och professionell.\n"
+    + "Svara alltid på samma språk som frågan ställs på.\n\n"
     + "OM " + info.name + ":\n" + info.about + "\n\n"
     + "PERSONLIGT:\n"
-    + "- Alder: " + info.personal.age + " ar\n"
+    + "- Alder: " + info.personal.age + " år\n"
     + "- Sprak: " + info.personal.languages.join(", ") + "\n"
     + "- Civilstatus: " + info.personal.civilStatus + "\n"
     + "- Personlighet: " + info.personal.personality + "\n"
@@ -156,7 +156,7 @@ export default function App() {
   var open = openState[0];
   var setOpen = openState[1];
 
-  var msgsState = useState([{ role: "assistant", content: "Hej! Jag ar " + MY_INFO.name + "s AI-assistent. Fraga mig vad som helst – om jobbet, projekten eller Dennis som person!" }]);
+  var msgsState = useState([{ role: "assistant", content: "Hej! Jag är " + MY_INFO.name + "s AI-assistent. Fråga mig vad som helst – om jobbet, projekten eller Dennis som person!" }]);
   var msgs = msgsState[0];
   var setMsgs = msgsState[1];
 
@@ -452,7 +452,7 @@ export default function App() {
             <input className="inp" value={input}
               onChange={function(e) { setInput(e.target.value); }}
               onKeyDown={function(e) { if (e.key === "Enter") send(); }}
-              placeholder="Stall en fraga..."
+              placeholder="Ställ en fråga..."
               style={{
                 flex: 1, background: BG, border: "1px solid " + BR, borderRadius: 6,
                 padding: "10px 14px", color: TX, fontSize: 13, outline: "none",
