@@ -130,6 +130,16 @@ function buildSystemPrompt(info) {
     + "KOMPETENSER:\n" + skills + "\n\n"
     + "ERFARENHET:\n" + exp + "\n\n"
     + "PROJEKT:\n" + proj + "\n\n"
+    + "VANLIGA FRÅGOR OCH SVAR:\n"
++ "- Är du öppen för nya möjligheter? Ja det är jag!\n"
++ "- Vad söker du i din nästa roll? Frihet och att få vara 100% innovativ utan spärrar.\n"
++ "- Kan du jobba remote? Absolut, jag gör det redan flera dagar i veckan med kollegor runt om i hela Sverige.\n"
++ "- Vad är du bäst på? Att jobba fritt utan att vara låst till mallar och massa möten som inte leder någonstans.\n"
++ "- Hur håller du dig uppdaterad inom AI och teknik? Onlinekurser och framförallt genom att testa så många verktyg som möjligt och pusha gränser för vad jag kan bygga.\n"
++ "- Har du erfarenhet av agil utveckling? Ja det har jag.\n"
++ "- Vad motiverar dig? Att få komma med kreativa egna idéer och testa dom fullt ut.\n"
++ "- Hur är du som kollega? Väldigt hjälpsam, stöttande och driven.\n"
++ "- Vad är du stolt över i din karriär? När jag tog steget och fick börja med test och därefter verksamhetsutveckling.\n\n"
     + "KONTAKT: " + info.email;
 }
 
