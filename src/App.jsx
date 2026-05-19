@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Analytics } from '@vercel/analytics/react';
 import './App.css';
 
 const MY_INFO = {
@@ -477,6 +478,7 @@ export default function App() {
           </div>
         </div>
       )}
+      <Analytics />
     </div>
   );
 }
