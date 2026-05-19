@@ -5,8 +5,8 @@ const MY_INFO = {
   name: "Dennis Johansson",
   title: "Verksamhetsutvecklare inom digital utveckling",
   tagline: "Jag kravställer och testar produkter for Sveriges största försäkringsbolag.",
-  about: "43-årig erfaren verksamhetsutvecklare med 15+ års erfarenhet av försakringsbranschen. Jag har en unik kombination av teknisk kompetens och djup verksamhetsförstaelse, vilket gör att jag kan bygga broar mellan IT och affarsverksamhet. Jag brinner for att skapa effektiva, användarvänliga lösningar som driver innovation och förbattrar kundupplevelsen.",
-  location: "Orebro, Sverige",
+  about: "43-årig erfaren verksamhetsutvecklare med 15+ års erfarenhet av försäkringsbranschen. Jag har en unik kombination av teknisk kompetens och djup verksamhetsförståelse, vilket gör att jag kan bygga broar mellan IT och affarsverksamhet. Jag brinner for att skapa effektiva, användarvänliga lösningar som driver innovation och förbättrar kundupplevelsen.",
+  location: "Örebro, Sverige",
   email: "dmk.johansson@gmail.com",
   linkedin: "linkedin.com/in/dennis-johansson-72702785",
   github: "github.com/krajdan",
@@ -17,7 +17,7 @@ const MY_INFO = {
     personality: "Erfaren, driven och lagspelare. Trivs bäst nar jag löser komplexa problem med kreativa lösningar.",
     funFact: "Jag spelar elgitarr och alskar musik. Några favoriter ar Weezer, Iron Maiden, Rage Against the Machine.",
     civilStatus: "Singel",
-    interests: "Dennis ar svag for en middag med ett glas rött vin och en god köttbit.",
+    interests: "Dennis är svag for en middag med ett glas rött vin och en god köttbit.",
   },
 
   hobbies: [
@@ -41,7 +41,7 @@ const MY_INFO = {
       role: "Verksamhetsutvecklare",
       company: "Folksam",
       period: "2023 - nu",
-      desc: "Involverad i ett stort systemskifte dar man byter ut gamla system mot moderna losningar. Arbetar i granslandet mellan IT och verksamhet for att säkerstalla att tekniska läsningar möter verksamhetens behov.",
+      desc: "Involverad i ett stort systemskifte där man byter ut gamla system mot moderna lösningar. Arbetar i gränslandet mellan IT och verksamhet for att säkerstalla att tekniska läsningar möter verksamhetens behov.",
     },
     {
       role: "Skadereglerare och QA systemtestning",
@@ -53,7 +53,7 @@ const MY_INFO = {
       role: "Skadereglerare och superuser",
       company: "Folksam",
       period: "2011 - 2021",
-      desc: "Skadereglering av sakförsakringar, med fokus pa att ge snabb och empatisk service. Som superuser ansvarade jag for att utbilda kollegor i nya system och processer.",
+      desc: "Skadereglering av sakförsakringar, med fokus på att ge snabb och empatisk service. Som superuser ansvarade jag för att utbilda kollegor i nya system och processer.",
     },
     {
       role: "Utvecklare appar och hemsidor pa fritiden",
@@ -70,13 +70,13 @@ const MY_INFO = {
       tags: ["PEPPOL"],
     },
     {
-      name: "Testfallsdesign och kvalitetssakring",
-      desc: "Testfallsdesign och kvalitetssakring av kravspecifikationer for boendeforsäkring och personforsäkring.",
+      name: "Testfallsdesign och kvalitetssäkring",
+      desc: "Testfallsdesign och kvalitetssäkring av kravspecifikationer for boendeförsäkring och personförsäkring.",
       tags: ["Jira", "Smart Bear Ready API", "Testdriven utveckling"],
     },
     {
       name: "AI-assistent for CV och portfolio",
-      desc: "Denna AI-assistent, byggd med React och OpenAI, ger snabba och professionella svar pa fragor om min bakgrund, erfarenhet och projekt.",
+      desc: "Denna AI-assistent, byggd med React och OpenAI, ger snabba och professionella svar på frågor om min bakgrund, erfarenhet och projekt.",
       tags: ["React", "OpenAI", "GPT-4o"],
     },
     {
@@ -447,7 +447,7 @@ export default function App() {
 
           {msgs.length === 1 && (
             <div style={{ padding: "0 16px 12px", display: "flex", flexWrap: "wrap", gap: 6 }}>
-              {["Vad har du jobbat med?","Vad gor du pa fritiden?", "Hur kontaktar jag dig?"].map(function(q) {
+              {["Vad har du jobbat med?","Vad gör du pa fritiden?", "Hur kontaktar jag dig?"].map(function(q) {
                 return (
                   <button key={q} onClick={function() { setInput(q); }} style={{
                     background: "none", border: "1px solid " + BR, borderRadius: 20,
