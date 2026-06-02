@@ -85,9 +85,9 @@ const MY_INFO = {
       tags: ["HTML", "CSS", "JavaScript"],
     },
     {
-      name: "Egna privata AI-projekt",
-      desc: "AI-driven projekthanteringsapp med automatisk prioritering och smarta notiser.",
-      tags: ["React Native", "OpenAI", "JavaScript", "html", "css"],
+      name: "Business intelligence app med AI-agent",
+      desc: "Skapar diagram i app med AI agent som hjälper till att analysera data och generera insikter.",
+      tags: ["React Native", "Python 3 — huvudspråk", "FastAPI — webbramverk (REST API)", "Uvicorn — ASGI-server", "Pandas — dataanalys och manipulation", "NumPy — numeriska beräkningar", "Plotly — diagramgenerering (server-side)", "ReportLab — PDF-generering", "SQLite — lokal databas (dashboard, historik, profiler, KPI:er)", "Anthropic SDK — Claude API (AI-motor)", "JavaScript", "html", "css"],
     },
     {
       name : "AI-agent",
