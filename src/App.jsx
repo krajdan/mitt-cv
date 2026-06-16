@@ -4,8 +4,8 @@ import './App.css';
 const MY_INFO = {
   name: "Dennis Johansson",
   title: "Verksamhetsutvecklare inom digital utveckling",
-  tagline: "Jag kravställer och testar produkter for Sveriges största försäkringsbolag.",
-  about: "43-årig erfaren verksamhetsutvecklare med 15+ års erfarenhet av försäkringsbranschen. Jag har en unik kombination av teknisk kompetens och djup verksamhetsförståelse, vilket gör att jag kan bygga broar mellan IT och affarsverksamhet. Jag brinner for att skapa effektiva, användarvänliga lösningar som driver innovation och förbättrar kundupplevelsen.",
+  tagline: "Jag kravställer och testar produkter för Sveriges största försäkringsbolag.",
+  about: "43-årig erfaren verksamhetsutvecklare med 15+ års erfarenhet av försäkringsbranschen. Jag har en unik kombination av teknisk kompetens och djup verksamhetsförståelse, vilket gör att jag kan bygga broar mellan IT och affärsverksamhet. Jag brinner för att skapa effektiva, användarvänliga lösningar som driver innovation och förbättrar kundupplevelsen.",
   location: "Örebro, Sverige",
   email: "dmk.johansson@gmail.com",
   linkedin: "linkedin.com/in/dennis-johansson-72702785",
@@ -13,11 +13,11 @@ const MY_INFO = {
 
   personal: {
     age: 43,
-    languages: ["Svenska (modersmal)", "Engelska (flytande)"],
-    personality: "Erfaren, driven och lagspelare. Trivs bäst nar jag löser komplexa problem med kreativa lösningar.",
-    funFact: "Jag spelar elgitarr och alskar musik. Några favoriter ar Weezer, Iron Maiden, Rage Against the Machine.",
+    languages: ["Svenska (modersmål)", "Engelska (flytande)"],
+    personality: "Erfaren, driven och lagspelare. Trivs bäst när jag löser komplexa problem med kreativa lösningar.",
+    funFact: "Jag spelar elgitarr och älskar musik. Några favoriter är Weezer, Iron Maiden, Rage Against the Machine.",
     civilStatus: "Singel",
-    interests: "Dennis är svag for en middag med ett glas rött vin och en god köttbit.",
+    interests: "Dennis är svag för en middag med ett glas rött vin och en god köttbit.",
   },
 
   hobbies: [
@@ -28,11 +28,11 @@ const MY_INFO = {
   ],
 
   skills: [
-    { category: "Programmeringssprak", items: ["JavaScript", "TypeScript", "HTML", "CSS"] },
+    { category: "Programmeringsspråk", items: ["JavaScript", "TypeScript", "HTML", "CSS"] },
     { category: "Frontend", items: ["React", "Next.js", "Tailwind"] },
     { category: "Backend", items: ["Node.js", "Python"] },
     { category: "Verktyg", items: ["Git", "Jira", "Smart Bear Ready API"] },
-    { category: "Ovrigt", items: ["Agil utveckling", "Testdriven utveckling"] },
+    { category: "Övrigt", items: ["Agil utveckling", "Testdriven utveckling"] },
     { category: "AI-kompetenser", items: ["GPT-4o", "Claude", "Gemini Pro", "OpenAI API", "Copilot", "Prompt engineering"] },
   ],
 
@@ -41,7 +41,7 @@ const MY_INFO = {
       role: "Verksamhetsutvecklare",
       company: "Folksam",
       period: "2023 - nu",
-      desc: "Involverad i ett stort systemskifte där man byter ut gamla system mot moderna lösningar. Arbetar i gränslandet mellan IT och verksamhet for att säkerstalla att tekniska läsningar möter verksamhetens behov.",
+      desc: "Involverad i ett stort systemskifte där man byter ut gamla system mot moderna lösningar. Arbetar i gränslandet mellan IT och verksamhet för att säkerställa att tekniska lösningar möter verksamhetens behov.",
     },
     {
       role: "Skadereglerare och QA systemtestning",
@@ -53,29 +53,29 @@ const MY_INFO = {
       role: "Skadereglerare och superuser",
       company: "Folksam",
       period: "2011 - 2021",
-      desc: "Skadereglering av sakförsakringar, med fokus på att ge snabb och empatisk service. Som superuser ansvarade jag för att utbilda kollegor i nya system och processer.",
+      desc: "Skadereglering av sakförsäkringar, med fokus på att ge snabb och empatisk service. Som superuser ansvarade jag för att utbilda kollegor i nya system och processer.",
     },
     {
-      role: "Utvecklare appar och hemsidor pa fritiden",
+      role: "Utvecklare appar och hemsidor på fritiden",
       company: "Privat",
       period: "2026 - nu",
-      desc: "Utveckling av appar, AI-agenter och hemsidor med fokus pa modern AI-teknik och användarvanlighet. Pa kort tid med hjalp av Gemini och Claude lart mig React, OpenAI API och andra verktyg.",
+      desc: "Utveckling av appar, AI-agenter och hemsidor med fokus på modern AI-teknik och användarvänlighet. På kort tid med hjälp av Gemini och Claude lärt mig React, OpenAI API och andra verktyg.",
     },
   ],
 
   projects: [
     {
       name: "E-faktura med PEPPOL-lösning",
-      desc: "Test och implementering av fakturalösningar for att möjliggöra e-fakturautbyte mellan leverantorer och kunder.",
+      desc: "Test och implementering av fakturalösningar för att möjliggöra e-fakturautbyte mellan leverantörer och kunder.",
       tags: ["PEPPOL"],
     },
     {
       name: "Testfallsdesign och kvalitetssäkring",
-      desc: "Testfallsdesign och kvalitetssäkring av kravspecifikationer for boendeförsäkring och personförsäkring.",
+      desc: "Testfallsdesign och kvalitetssäkring av kravspecifikationer för boendeförsäkring och personförsäkring.",
       tags: ["Jira", "Smart Bear Ready API", "Testdriven utveckling"],
     },
     {
-      name: "AI-assistent for CV och portfolio",
+      name: "AI-assistent för CV och portfolio",
       desc: "Denna AI-assistent, byggd med React och OpenAI, ger snabba och professionella svar på frågor om min bakgrund, erfarenhet och projekt.",
       tags: ["React", "OpenAI", "GPT-4o"],
     },
@@ -111,7 +111,7 @@ const MY_INFO = {
 
 function buildSystemPrompt(info) {
   var skills = info.skills.map(function(s) { return "- " + s.category + ": " + s.items.join(", "); }).join("\n");
-  var exp = info.experience.map(function(e) { return "- " + e.role + " pa " + e.company + " (" + e.period + "): " + e.desc; }).join("\n");
+  var exp = info.experience.map(function(e) { return "- " + e.role + " på " + e.company + " (" + e.period + "): " + e.desc; }).join("\n");
   var proj = info.projects.map(function(p) { return "- " + p.name + ": " + p.desc + " [" + p.tags.join(", ") + "]"; }).join("\n");
   var hobbies = info.hobbies.join(", ");
 
@@ -120,8 +120,8 @@ function buildSystemPrompt(info) {
     + "Svara alltid på samma språk som frågan ställs på.\n\n"
     + "OM " + info.name + ":\n" + info.about + "\n\n"
     + "PERSONLIGT:\n"
-    + "- Alder: " + info.personal.age + " år\n"
-    + "- Sprak: " + info.personal.languages.join(", ") + "\n"
+    + "- Ålder: " + info.personal.age + " år\n"
+    + "- Språk: " + info.personal.languages.join(", ") + "\n"
     + "- Civilstatus: " + info.personal.civilStatus + "\n"
     + "- Personlighet: " + info.personal.personality + "\n"
     + "- Intressen: " + info.personal.interests + "\n"
@@ -149,6 +149,18 @@ var SU = "#141414";
 var BR = "#222222";
 var TX = "#f0ede8";
 var MT = "#666666";
+
+var LINK_STYLES = ".contact-link{position:relative;display:inline-flex;align-items:center;gap:7px;padding:2px 3px 3px;color:#f0ede8;text-decoration:none;border-bottom:1px solid rgba(201,168,76,.35);overflow:hidden;transition:color .25s ease,border-color .25s ease;}"
++ ".contact-link:hover,.contact-link:focus-visible{color:#c9a84c;border-bottom-color:#c9a84c;outline:none;}"
++ ".contact-link .arrow{font-size:.78em;opacity:.6;transition:transform .25s ease,opacity .25s ease;}"
++ ".contact-link:hover .arrow,.contact-link:focus-visible .arrow{transform:translate(2px,-2px);opacity:1;}"
++ ".contact-link::before{content:'';position:absolute;top:0;left:0;height:100%;width:45%;background:linear-gradient(100deg,transparent,rgba(255,246,219,.45),transparent);transform:translateX(-160%);pointer-events:none;}"
++ ".contact-link.shimmer::before{animation:linkShimmer 1.25s ease-out 1 forwards;}"
++ "@keyframes linkShimmer{to{transform:translateX(360%);}}"
++ ".github-hint{position:absolute;right:100%;top:50%;margin-right:14px;white-space:nowrap;font-size:12px;letter-spacing:.04em;color:#c9a84c;opacity:0;pointer-events:none;transform:translate(0,-50%);}"
++ ".github-hint.show{animation:hintFly 5.2s cubic-bezier(.22,1,.36,1) .9s 1 forwards;}"
++ "@keyframes hintFly{0%{opacity:0;transform:translate(-28px,-50%);}16%{opacity:1;transform:translate(0,-50%);}72%{opacity:1;transform:translate(0,-50%);}100%{opacity:0;transform:translate(-12px,-50%);}}"
++ "@media (prefers-reduced-motion: reduce){.contact-link::before{display:none;}.contact-link .arrow{transition:none;}.github-hint.show{opacity:1;animation:none;transform:translate(0,-50%);}}";
 
 function Tag(props) {
   return (
@@ -179,10 +191,31 @@ export default function App() {
   var setBusy = busyState[1];
 
   var endRef = useRef(null);
+  var contactRef = useRef(null);
 
   useEffect(function() {
     if (endRef.current) endRef.current.scrollIntoView({ behavior: "smooth" });
   }, [msgs]);
+
+  useEffect(function() {
+    var el = contactRef.current;
+    if (!el || typeof IntersectionObserver === "undefined") return;
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var links = el.querySelectorAll(".contact-link");
+          Array.prototype.forEach.call(links, function(link, i) {
+            setTimeout(function() { link.classList.add("shimmer"); }, i * 180);
+          });
+          var hint = el.querySelector(".github-hint");
+          if (hint) hint.classList.add("show");
+          obs.disconnect();
+        }
+      });
+    }, { threshold: 0.4 });
+    obs.observe(el);
+    return function() { obs.disconnect(); };
+  }, []);
 
   function send() {
     if (!input.trim() || busy) return;
@@ -210,7 +243,7 @@ export default function App() {
       setMsgs(next.concat([{ role: "assistant", content: data.choices[0].message.content }]));
     })
     .catch(function() {
-      setMsgs(next.concat([{ role: "assistant", content: "Nagot gick fel. Forsok igen!" }]));
+      setMsgs(next.concat([{ role: "assistant", content: "Något gick fel. Försök igen!" }]));
     })
     .finally(function() {
       setBusy(false);
@@ -226,6 +259,7 @@ export default function App() {
 
   return (
     <div style={{ minHeight: "100vh", background: BG, color: TX }}>
+      <style>{LINK_STYLES}</style>
 
       <nav style={{
         position: "fixed", top: 0, left: 0, right: 0, zIndex: 100,
@@ -362,12 +396,19 @@ export default function App() {
               <span className="italic" style={{ color: A }}>prata.</span>
             </h2>
           </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 12, alignItems: "flex-end" }}>
-            <a href={"mailto:" + MY_INFO.email} style={{ fontSize: 16, color: TX, textDecoration: "none" }}>{MY_INFO.email}</a>
-            <a href={"https://" + MY_INFO.linkedin} target="_blank" rel="noreferrer"
-              style={{ fontSize: 13, color: MT, textDecoration: "none" }}>{MY_INFO.linkedin}</a>
-            <a href={"https://" + MY_INFO.github} target="_blank" rel="noreferrer"
-              style={{ fontSize: 13, color: MT, textDecoration: "none" }}>{MY_INFO.github}</a>
+          <div ref={contactRef} style={{ display: "flex", flexDirection: "column", gap: 14, alignItems: "flex-end" }}>
+            <a className="contact-link" href={"mailto:" + MY_INFO.email} style={{ fontSize: 16 }}>
+              {MY_INFO.email}<span className="arrow">&#8599;</span>
+            </a>
+            <a className="contact-link" href={"https://" + MY_INFO.linkedin} target="_blank" rel="noreferrer" style={{ fontSize: 13 }}>
+              {MY_INFO.linkedin}<span className="arrow">&#8599;</span>
+            </a>
+            <span style={{ position: "relative", display: "inline-flex" }}>
+              <span className="github-hint">Se vad jag har byggt &#8599;</span>
+              <a className="contact-link" href={"https://" + MY_INFO.github} target="_blank" rel="noreferrer" style={{ fontSize: 13 }}>
+                {MY_INFO.github}<span className="arrow">&#8599;</span>
+              </a>
+            </span>
           </div>
         </div>
       </section>
@@ -447,7 +488,7 @@ export default function App() {
 
           {msgs.length === 1 && (
             <div style={{ padding: "0 16px 12px", display: "flex", flexWrap: "wrap", gap: 6 }}>
-              {["Vad har du jobbat med?","Vad gör du pa fritiden?", "Hur kontaktar jag dig?"].map(function(q) {
+              {["Vad har du jobbat med?","Vad gör du på fritiden?", "Hur kontaktar jag dig?"].map(function(q) {
                 return (
                   <button key={q} onClick={function() { setInput(q); }} style={{
                     background: "none", border: "1px solid " + BR, borderRadius: 20,
